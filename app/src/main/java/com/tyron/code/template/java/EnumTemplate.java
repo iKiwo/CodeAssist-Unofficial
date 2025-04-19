@@ -13,7 +13,7 @@ public class EnumTemplate extends JavaClassTemplate {
 
   @Override
   public String getName() {
-    return "Interface";
+    return "Enum";
   }
 
   @Override

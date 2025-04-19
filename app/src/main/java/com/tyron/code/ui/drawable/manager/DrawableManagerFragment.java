@@ -75,10 +75,10 @@ public class DrawableManagerFragment extends Fragment {
     mRecyclerView = view.findViewById(R.id.recyclerView);
     mRecyclerView.setLayoutManager(new GridLayoutManager(requireContext(), 4));
     mRecyclerView.setAdapter(mAdapter);
-    loadDrwables();
+    loadDrawables();
   }
 
-  private void loadDrwables() {
+  private void loadDrawables() {
     toggleLoading(true);
 
     Executors.newSingleThreadExecutor()
@@ -246,7 +246,7 @@ public class DrawableManagerFragment extends Fragment {
                                                   requireContext(),
                                                   getString(R.string.success),
                                                   getString(R.string.rename_success));
-                                              loadDrwables();
+                                              loadDrawables();
                                             });
                                   }
                                 } catch (Exception e) {
@@ -300,7 +300,7 @@ public class DrawableManagerFragment extends Fragment {
                                 Toast.makeText(
                                     requireContext(), R.string.delete_success, Toast.LENGTH_LONG);
                             toast.show();
-                            loadDrwables();
+                            loadDrawables();
                           });
                 }
               } catch (IOException e) {

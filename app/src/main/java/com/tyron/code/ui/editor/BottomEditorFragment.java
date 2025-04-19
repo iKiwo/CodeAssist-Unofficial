@@ -172,7 +172,7 @@ public class BottomEditorFragment extends Fragment {
                     }
                   }
                 }),
-            "->",
+            "TAB",
             "tab"));
     items.addAll(
         strings.stream()
@@ -187,8 +187,8 @@ public class BottomEditorFragment extends Fragment {
             .collect(Collectors.toList()));
     Collections.addAll(
         items,
-        new ShortcutItem(Collections.singletonList(new UndoAction()), "⬿", UndoAction.KIND),
-        new ShortcutItem(Collections.singletonList(new RedoAction()), "⤳", RedoAction.KIND),
+        new ShortcutItem(Collections.singletonList(new UndoAction()), "↺", UndoAction.KIND),
+        new ShortcutItem(Collections.singletonList(new RedoAction()), "⟳", RedoAction.KIND),
         new ShortcutItem(
             Collections.singletonList(new CursorMoveAction(CursorMoveAction.Direction.UP, 1)),
             "↑",

@@ -4,22 +4,22 @@ apply plugin: 'com.diffplug.spotless'
 
 android {
     compileSdkVersion 34
-    buildToolsVersion '34.0.0' 
+    buildToolsVersion '34.0.4' 
 	namespace "org.codeassist.unofficial" 
 	
 	spotless {
 		java {
 			target "**/*.java"
 			googleJavaFormat()
-			}
 		}
+	}
 	
     defaultConfig {
         targetSdkVersion 33
 		minSdkVersion 26		
 		applicationId "org.codeassist.unofficial"
 		versionCode 1
-		versionName "1.0.2"         	
+		versionName "1.0.0"         	
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
@@ -161,11 +161,11 @@ dependencies {
     implementation 'com.github.TutorialsAndroid:crashx:6.0.19'
     
 	//git
-	    implementation 'org.slf4j:slf4j-api:2.0.16'
-	    implementation 'com.blankj:utilcodex:1.31.1'
+	implementation 'org.slf4j:slf4j-api:2.0.16'
+	implementation 'com.blankj:utilcodex:1.31.1'
      
      //for CodeAssist
-     implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.0.20'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.0.20'
 	
     //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 

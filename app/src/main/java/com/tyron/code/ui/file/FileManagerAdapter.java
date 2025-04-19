@@ -130,7 +130,7 @@ public class FileManagerAdapter extends RecyclerView.Adapter<FileManagerAdapter.
         } else if (fileName.endsWith(".json")) {
             icon.setImageResource(R.drawable.json_dark);
         } else {
-            icon.setImageResource(R.drawable.any.dark);
+            icon.setImageResource(R.drawable.any_dark);
         }
       }
     }

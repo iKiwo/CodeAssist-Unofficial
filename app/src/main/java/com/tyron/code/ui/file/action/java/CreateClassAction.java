@@ -10,6 +10,7 @@ import com.tyron.builder.project.api.Module;
 import com.tyron.code.template.CodeTemplate;
 import com.tyron.code.template.java.AbstractTemplate;
 import com.tyron.code.template.java.InterfaceTemplate;
+import com.tyron.code.template.java.EnumTemplate;
 import com.tyron.code.template.java.JavaClassTemplate;
 import com.tyron.code.ui.editor.impl.FileEditorManagerImpl;
 import com.tyron.code.ui.file.CommonFileKeys;
@@ -44,7 +45,7 @@ public class CreateClassAction extends FileAction {
   }
 
   private List<CodeTemplate> getTemplates() {
-    return Arrays.asList(new JavaClassTemplate(), new AbstractTemplate(), new InterfaceTemplate());
+    return Arrays.asList(new JavaClassTemplate(), new AbstractTemplate(), new InterfaceTemplate(), new EnumTemplate());
   }
 
   @Override

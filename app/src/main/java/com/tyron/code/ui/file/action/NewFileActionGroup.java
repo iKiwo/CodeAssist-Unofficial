@@ -48,11 +48,12 @@ public class NewFileActionGroup extends ActionGroup {
   @Override
   public AnAction[] getChildren(@Nullable AnActionEvent e) {
     return new AnAction[] {
+      new CreateDirectoryAction(),
       new CreateFileAction(),
       new CreateClassAction(),
       new CreateKotlinClassAction(),
-      new CreateLayoutAction(),
-      new CreateDirectoryAction()
+      new CreateLayoutAction()
+      
     };
   }
 }

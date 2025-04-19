@@ -18,6 +18,9 @@ public class TreeFile {
     if (file.isDirectory()) {
       return new TreeFolder(file);
     }
+    if(file.getName().endsWith(".png") || file.getName().endsWith(".jpg") || file.getName().endsWith(".jpge")){
+        return new TreeImage(file);
+    }
     if (file.getName().endsWith(".java")) {
       return new TreeJavaFile(file);
     }
@@ -35,7 +38,7 @@ public class TreeFile {
   }
 
   public Drawable getIcon(Context context) {
-    return AppCompatResources.getDrawable(context, R.drawable.round_insert_drive_file_24);
+    return AppCompatResources.getDrawable(context, R.drawable.any_dark);
   }
 
   @Override

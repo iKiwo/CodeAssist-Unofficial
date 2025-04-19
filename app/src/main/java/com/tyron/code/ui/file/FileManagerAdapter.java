@@ -120,18 +120,7 @@ public class FileManagerAdapter extends RecyclerView.Adapter<FileManagerAdapter.
       if (file.isDirectory()) {
         icon.setImageResource(R.drawable.round_folder_24);
       } else if (file.isFile()) {
-         
-        String fileName = file.getName().toLowerCase();
-        
-        if(fileName.endsWith(".png") || fileName.endsWith(".jpg") || fileName.endsWith(".jpge")) {
-            icon.setImageResource(R.drawable.image_dark);
-        } else if (fileName.endsWith(".java")) {
-            icon.setImageResource(R.drawable.java_dark);
-        } else if (fileName.endsWith(".json")) {
-            icon.setImageResource(R.drawable.json_dark);
-        } else {
-            icon.setImageResource(R.drawable.any_dark);
-        }
+         icon.setImageResource(R.drawable.any_dark);
       }
     }
 

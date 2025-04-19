@@ -6,14 +6,14 @@ import androidx.appcompat.content.res.AppCompatResources;
 import java.io.File;
 import org.codeassist.unofficial.R;
 
-public class TreeJavaFile extends TreeFile {
+public class TreeImage extends TreeFile {
 
-  public TreeJavaFile(File file) {
+  public TreeImage(File file) {
     super(file);
   }
 
   @Override
   public Drawable getIcon(Context context) {
-    return AppCompatResources.getDrawable(context, R.drawable.java_dark);
+    return AppCompatResources.getDrawable(context, R.drawable.image_dark);
   }
 }

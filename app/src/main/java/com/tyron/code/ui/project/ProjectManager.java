@@ -251,10 +251,12 @@ public class ProjectManager {
     long milliseconds = Duration.between(now, Instant.now()).toMillis();
     long seconds = TimeUnit.MILLISECONDS.toSeconds(milliseconds);
     if (seconds > 60) {
-      long minutes = TimeUnit.MILLISECONDS.toMinutes(milliseconds);
-      logger.debug("TIME TOOK " + minutes + "m");
+        long minutes = TimeUnit.MILLISECONDS.toMinutes(milliseconds);
+        logger.debug("");
+        logger.debug("BUILD SUCCESSFUL in " + minutes + "m");
     } else {
-      logger.debug("TIME TOOK " + seconds + "s");
+        logger.debug("");
+        logger.debug("BUILD SUCCESSFUL in " + seconds + "s");
     }
   }
 
